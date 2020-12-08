@@ -18,12 +18,12 @@ Do the following:
    HINT: no function required
 */
 
-let votingAge = 23
-if (votingAge > 18){
-console.log(true)}
-else {
-  console.log(false)
-}
+// let votingAge = 21
+// if (votingAge > 18){
+// console.log(true)}
+// else {
+//   console.log(false)
+// }
 
 
 /*
@@ -36,15 +36,12 @@ Do the following:
 
    HINT: no function required
 */
- 
-// let num1 = 20
-// let num2 = 4
-// if (num1 < 19){
-//   num3 = num1 - num2;
-// } else {
-//   num3 = num1 + num2;
-// }
-
+//  let num1 = 23
+//  let num2 = 32
+//  if (num2 === 32){
+//    num1 = 21;
+//   console.log(num1)
+//  }
 
 
 
@@ -60,7 +57,7 @@ Do the following:
    HINT: look up the Number method
 */
 
-const convertString = Number('1999');
+// const convertString = Number('1999');
 
 
 /*
@@ -125,6 +122,31 @@ function hungryDog(/*add your code here*/){
     /*add your code here*/
   }
 
+// function hungryDog(weight, age){
+//   if(age < 1){
+//     if(age < 0.33){
+//       return weight * 0.1;
+//     } else if( age < 0.58){
+//       return weight * 0.05;
+//     } else {
+//       return weight * 0.04;
+//     }
+
+//   } else{
+//     if(weight < 5){
+//     return weight * 0.05;
+//   } else if(weight < 10){
+//     return weight * 0.04;
+//   } else if (weight <= 15){
+//     return weight * 0.03;
+//   } else{
+//     return weight * 0.02;
+//   }
+// }
+// }
+
+// hungryDog();
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -148,9 +170,147 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+//const computerChoice = Math.ceil(Math.random() * 3);
+const win = "you win!";
+const lose = "you lose!";
+const tie = "it's a tie";
+
+const paper = "paper";
+const rock = "rock";
+const scissors = "scissors";
+
+
+
+function game(user, computer)
+{
+  let results = "";
+  /*add your code here*/
+  if (user == computer)
+  {
+    results = tie;
+  }
+  else if ( (user == rock && computer == scissors) || (user == paper && computer == rock) || (user == scissors && computer == paper))
+  {
+    results =  win;
+  }
+  else
+  {
+    results = lose;
+  }
+
+  console.log("User[" + user + "]  Computer[" + computer + "]  Results [" + results + "]");
+  return results;
 }
+
+// const rock = 'rock';
+// const paper = 'paper';
+// const scissors = 'scissors';
+// const win = 'you win!';
+// const lose = 'you lose!';
+// const tie = "it's a tie";
+
+
+
+// const computer = math.ceil(Math.random() * 3);
+// if (computer === 1) {
+//   computer = rock;
+// } else if (computer === 2){
+// computer = paper;
+// } else {
+//   computer = scissors;
+// }
+
+
+// function game(user, computer){
+//   if(user === rock){
+//     if(computer === rock){
+//       console.log(tie);
+//     } else if (computer === paper){
+//       console.log(win);
+//     } else {
+//       console.log(lose);
+//     }
+// } else if (user === paper){
+//   if(computer === rock){
+//     console.log(lose);
+//   } else if (computer === paper){
+//     console.log(tie);
+//   } else {
+//     console.log(win);
+//   }
+// } else if (user === scissors) {
+//   if(computer === rock){
+//     console.log(lose);
+//   } else if (computer === paper){
+//     console.log(win);
+//   } else {
+//     console.log(tie);
+//   }
+// } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // if (user === 'scissors' && computer === 'scissors'){
+    //   console.log("there's a tie");
+    // } else if (user === 'rock' && computer === 'scissors'){
+    //   console.log('you win!');
+    // } else if (user === 'paper' && computer === 'scissors'){
+    //   console.log('you lose')
+    // } else if (user === 'scissors' && computer === 'rock'){
+    //   console.log('you lose')
+    // } else if (user === 'rock' && computer === 'rock'){
+    //   console.log("there's a tie")
+    // } else if (user === 'paper' && computer === 'rock'){
+    //   console.log('you win!')
+    // } else if ()
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
   
   
 
