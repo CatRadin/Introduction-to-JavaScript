@@ -175,21 +175,29 @@ let compChoice = Math.ceil(Math.random() * 3);
    
 function game(userChoice, compChoice){
    
-   if(userChoice === `scissors` && compChoice === `rock`){
+   if(userChoice === `scissors` && compChoice === `rock`)
+   {
    return `you lose!`
-   } else if(userChoice === `scissors` && compChoice === `paper`){
+   } else if(userChoice === `scissors` && compChoice === `paper`)
+   {
     return `you win!`
-   } else if(userChoice === `scissors` && compChoice === `scissors`){
+   } else if(userChoice === `scissors` && compChoice === `scissors`)
+   {
     return `it's a tie`
-   } else if(userChoice === `rock` && compChoice === `rock`){
+   } else if(userChoice === `rock` && compChoice === `rock`)
+   {
     return `it's a tie`
-  } else if(userChoice === `rock` && compChoice === `paper`){
+  } else if(userChoice === `rock` && compChoice === `paper`)
+  {
     return `you lose!`
-  } else if(userChoice === `rock` && compChoice === `scissors`){
+  } else if(userChoice === `rock` && compChoice === `scissors`)
+  {
     return `you win!`
-  } else if(userChoice === `paper` && compChoice === `rock`){
+  } else if(userChoice === `paper` && compChoice === `rock`)
+  {
     return `you win!`
-  } else if(userChoice === `paper` && compChoice === `paper`){
+  } else if(userChoice === `paper` && compChoice === `paper`)
+  {
     return `it's a tie`
   } else{
     return `you lose!`
@@ -341,9 +349,25 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+
+function vowelCounter(testingString)
+{
+  var vowelList = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < testingString.length ; x++)
+  {
+    if (vowelList.indexOf(testingString[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
+  }
+  return vcount;
 }
+console.log(vowelCounter("This is a test SENTANCE to test how many VOWELS are present"));
+
+
 
 
 
