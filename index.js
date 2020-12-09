@@ -169,120 +169,71 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+let compChoice = Math.ceil(Math.random() * 3);
+   if(compChoice = 1){
+     compChoice = `rock`;
+   } else if(compChoice = 2){
+    compChoice =`paper`;
+   } else{
+    compChoice = `scissors`;
+   }
+   
+function game(userChoice, compChoice){
+   
+   if(userChoice === `scissors` && compChoice === `rock`){
+   return `you lose!`
+   } else if(userChoice === `scissors` && compChoice === `paper`){
+    return `you win!`
+   } else if(userChoice === `scissors` && compChoice === `scissors`){
+    return `it's a tie`
+   } else if(userChoice === `rock` && compChoice === `rock`){
+    return `it's a tie`
+  } else if(userChoice === `rock` && compChoice === `paper`){
+    return `you lose!`
+  } else if(userChoice === `rock` && compChoice === `scissors`){
+    return `you win!`
+  } else if(userChoice === `paper` && compChoice === `rock`){
+    return `you win!`
+  } else if(userChoice === `paper` && compChoice === `paper`){
+    return `it's a tie`
+  } else{
+    return `you lose!`
+  }
+
+}
+  console.log(game(`scissors`));
 
 //const computerChoice = Math.ceil(Math.random() * 3);
-const win = "you win!";
-const lose = "you lose!";
-const tie = "it's a tie";
-
-const paper = "paper";
-const rock = "rock";
-const scissors = "scissors";
-
-
-
-function game(user, computer)
-{
-  let results = "";
-  /*add your code here*/
-  if (user == computer)
-  {
-    results = tie;
-  }
-  else if ( (user == rock && computer == scissors) || (user == paper && computer == rock) || (user == scissors && computer == paper))
-  {
-    results =  win;
-  }
-  else
-  {
-    results = lose;
-  }
-
-  console.log("User[" + user + "]  Computer[" + computer + "]  Results [" + results + "]");
-  return results;
-}
-
-// const rock = 'rock';
-// const paper = 'paper';
-// const scissors = 'scissors';
-// const win = 'you win!';
-// const lose = 'you lose!';
+// const win = "you win!";
+// const lose = "you lose!";
 // const tie = "it's a tie";
 
+// const paper = "paper";
+// const rock = "rock";
+// const scissors = "scissors";
 
 
-// const computer = math.ceil(Math.random() * 3);
-// if (computer === 1) {
-//   computer = rock;
-// } else if (computer === 2){
-// computer = paper;
-// } else {
-//   computer = scissors;
+
+// function game(user, computer)
+// {
+//   let results = "";
+//   /*add your code here*/
+//   if (user == computer)
+//   {
+//     results = tie;
+//   }
+//   else if ( (user == rock && computer == scissors) || (user == paper && computer == rock) || (user == scissors && computer == paper))
+//   {
+//     results =  win;
+//   }
+//   else
+//   {
+//     results = lose;
+//   }
+
+//   console.log("User[" + user + "]  Computer[" + computer + "]  Results [" + results + "]");
+//   return results;
 // }
-
-
-// function game(user, computer){
-//   if(user === rock){
-//     if(computer === rock){
-//       console.log(tie);
-//     } else if (computer === paper){
-//       console.log(win);
-//     } else {
-//       console.log(lose);
-//     }
-// } else if (user === paper){
-//   if(computer === rock){
-//     console.log(lose);
-//   } else if (computer === paper){
-//     console.log(tie);
-//   } else {
-//     console.log(win);
-//   }
-// } else if (user === scissors) {
-//   if(computer === rock){
-//     console.log(lose);
-//   } else if (computer === paper){
-//     console.log(win);
-//   } else {
-//     console.log(tie);
-//   }
-// } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
 
 
 
