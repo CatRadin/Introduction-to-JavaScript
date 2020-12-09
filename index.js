@@ -257,7 +257,8 @@ Using the miles function below do the following:
 // function miles(/*add your code here*/){
 //     /*add your code here*/
 //   }
-  function miles(kilometers){
+  function miles(kilometers)
+  {
     return kilometers * 0.621371
   }
   console.log(miles(1));
@@ -274,7 +275,8 @@ Using the feet function below do the following:
 // function feet(/*add your code here*/){
 //     /*add your code here*/
 //   }
-  function feet(cm){
+  function feet(cm)
+  {
     return cm / 30.48
   }
   console.log(feet(1));
@@ -294,8 +296,10 @@ Using the annoyingSong function below do the following:
 //         /*add your code here*/
 //   }
 
-function annoyingSong(number){
-  for(let i = number; i >= 0; i--){
+function annoyingSong(number)
+{
+  for(let i = number; i >= 0; i--)
+  {
       return(`${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`)
   }    
 }
@@ -355,7 +359,7 @@ function vowelCounter(testingString)
   var vowelList = 'aeiouAEIOU';
   var vcount = 0;
   
-  for(var x = 0; x < testingString.length ; x++)
+  for(var x = 0; x < testingString.length; x++)
   {
     if (vowelList.indexOf(testingString[x]) !== -1)
     {
